@@ -1,0 +1,303 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.main-page{
+    background-image: url(./main-page-bck.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.logo{
+    width: 8.375rem;
+    height: 2.25rem;
+}
+.first-page{
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.tv-video{
+    background-image: url(./tv.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.our-story-card-video{
+    height: 100%;
+    width: 100%;
+}
+.lang-select{
+  background-color: #000;
+  color: #333;
+  padding: 7px 14px;
+  font-size: 16px;
+  border-radius: 2px;
+}
+.qwe , .sign-in-btn{
+    width: 6rem;
+    height: 2.3rem;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px;
+}
+.qwe{
+    background: none;
+    color: white;
+    border: 1px solid white;
+    margin-right: 30px;
+}
+.sign-in-btn{
+    background-color: #e50914;
+    color: white;
+   
+}
+.second-page{
+    text-align: center;
+    padding-top: 200px;
+}
+.second-page-heading{
+    color: white;
+    font-size: 3.125rem;
+}
+.second-page-heading-2{
+    font-size: 1.625rem;
+    color: white;
+}
+.second-page-heading-3{
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+    color: white;
+}
+.inputFiled{
+    min-width: 450px;
+    height: 50px;
+    padding: 0 10px;
+}
+.get-start-btn{
+    font-size: 1rem;
+    color: white;
+    width: 200px;
+    background-color: #e50914;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+}
+/* -------------- */
+.common-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 70px 50px;
+    grid-column-gap: 30px;
+    background-color: black;
+}
+.common-div-text{
+    display: block;
+    align-self: center;
+}
+.common-div-text-info{
+    font-size: 50px;
+    color: white;
+}
+.common-div-text-info-2{
+    font-size: 25px;
+    color: white;
+}
+.tv-img{
+    width: 100%;
+    height: auto;
+}
+/* ---------------- */
+.question{
+    color: white;
+    width: 100%;
+    background-color: black;
+    padding: 70px 45px;
+}
+.question-heading{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.ask-question{
+    background-color: #303030;
+    font-size: 1.625rem;
+    font-weight: 400;
+    padding: 20px 57px 20px 31px;
+    margin: 0px 140px;
+    margin-bottom: 10px;
+    border: 0;
+}
+.membership-text{
+    font-size: 19px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.membership-text-1{
+    margin: 0px 110px;
+    padding: 0px 46px 20px;
+}
+.footer-div{
+    padding: 70px 100px 0px 100px;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer-div div div{
+    font-size: 14px;
+    color: #757575;
+    margin: 0px 0px 16px;
+    padding: 0px 12px 0px 0px;
+    cursor: pointer;
+}
+.lang-select-2{
+    padding: 0px 100px 50px;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+.eng{
+    background-color: #000;
+    background-image: none;
+    border: 1px solid #333;
+    color: #999;
+    font-size: 16px;
+    padding: 12px 26px 12px 26px;
+}
+.netflix-india{
+    padding: 5px 100px;
+    background-color: #000;
+    color: #999;
+    font-size: 15px;
+}
+.main-page , .second-page , .common-div ,.question,.membership-text,.footer-div,.lang-select-2,.netflix-india{
+    margin: -1px 0px;
+}
+/*---responsive design------------ */
+@media (max-width:768px){
+    .first-page{
+       padding: 20px 20px;
+    }
+    .second-page{
+        padding-top: 60px;
+    }
+    .inputFiled{
+        min-width: 300px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    .get-start-btn{
+        height: 50px;
+        width: 150px;
+    }
+}
+/* ----------- */
+@media (max-width:486px){
+    .main-page{
+        height: 82vh;
+    }
+    .first-page{
+        padding: 10px 10px;
+    }
+    .qwe{
+        margin: 0;
+    }
+    .second-page-heading{
+        font-size: 2rem;
+    }
+    .logo{
+        width: 6.375rem;
+        height: 1.65rem;
+    }
+    .qwe,.sign-in-btn {
+        width: 68px;
+        height: 30px
+    }
+    .lang-select{
+        padding: 4px 0px;
+        font-size: 16px;
+        border-radius: 2px;
+      }
+    .inputFiled{
+        min-width: 95%;
+        height: 37px;
+    }
+    .get-start-btn{
+        width: 114px;
+        height: 33px;
+    }
+    .second-page-heading-2 {
+        font-size: 1.425rem;
+    }
+    .question{
+        background-color: black;
+        padding: 0px;
+        padding-bottom: 1px;
+    }
+    .question-heading{
+        font-size: 1.4rem;
+    }
+    .ask-question{
+        background-color: #303030;
+        font-size: 1rem;
+        padding: 10px 15px;
+        margin: 0px 0px;
+        margin-bottom: 10px;
+        border: 0;
+    }
+    .membership-text-1{
+        padding: 10px;
+        margin: 0px;
+    }
+    .footer-div{
+        padding: 50px 20px 0 30px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .common-div{
+        padding: 21px 13px;
+    }
+    .common-div-text-info{
+        font-size: 30px;
+    }
+    .common-div-text-info-2{
+        font-size: 16px;
+    }
+    .common-div .common-div-text .common-div-text-info{
+        margin-bottom: 10px;
+    }
+    .lang-select-2 {
+        padding: 10px 0px 17px 30px;
+    }
+    .netflix-india{
+        padding: 10px 30px;
+    }
+}
+/* -------------- */
+@media (max-width:574px) {
+    .common-div{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+/* --------------- */
+@media (max-width:884px)
+{
+    .question{
+        padding: 1;
+    }
+    .ask-question{
+        margin: 7px 27px;
+        margin-bottom: 10px;
+        padding: 6px 21px;
+        font-size: 1.35rem;
+    }
+}
